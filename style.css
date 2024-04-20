@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    width: 100%;
+    height: 100vh;
+    color : #fff;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    background-color: #fff;
+    height: 10%;
+}
+.logo>img{
+    height: 100%;
+    width: 100%;
+}
+.menu_bar{
+    background-color: black;
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.menu_items{
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+.main_body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.top_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+}
+.menu_bar>p:hover{
+    cursor: pointer;
+    
+}
+
+.card{
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.2);
+    height: 200px;
+    width: 300px;
+    color: rgb(255, 252, 252);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card_moisture{
+       background-color: rgba(51, 183, 59, 0.2);
+}
+#card_nitrogen{
+    background-color: rgba(214, 43, 24, 0.2);
+}
+#card_potassium{
+    background-color: rgba(51, 183, 59, 0.2);
+}
+#card_phos{
+    background-color:rgba(193, 31, 31, 0.2);
+}
+#card_ph{
+    background-color: rgba(51, 183, 59, 0.2);
+}
+#card_temp{
+    background-color: rgba(51, 183, 59, 0.2);
+}
+.main_content{
+    display: flex;
+    justify-content: center;
+    gap:  40px;
+    flex-wrap: wrap;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.main_content video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire container */
+}
